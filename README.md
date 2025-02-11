@@ -1,4 +1,5 @@
 # TecnoPro
+<<<<<<< HEAD
 #Engelber Cifuentes
 analisis_sistemas
 AUTHOR
@@ -132,3 +133,19 @@ CREATE INDEX IX_TRANSACTIONS_Account ON TRANSACTIONS(id_account_transaction);
 CREATE INDEX IX_TRANSACTIONS_ATM ON TRANSACTIONS(id_atm_transaction);
 -- Index for transactions by date (for filtering by time)
 CREATE INDEX IX_TRANSACTIONS_Date ON TRANSACTIONS(created_date);
+=======
+HRERE
+analisis_sistemas
+
+
+
+<<<<<<< HEAD
+
+=======
+## AUTHOR
+
+- **Name**: Milton Gomez
+- **Email**: <mgomezm46@miumg.edu.gt>
+- **GitHub**: [Milton Gomez](https://github.com/Miltongom)
+>>>>>>> ead39dd1cb9357c43988958691c45cd84b91f458
+>>>>>>> main
