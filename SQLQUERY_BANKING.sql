@@ -1,0 +1,94 @@
+-- CREATE DATABASE ON MSSQL SERVER 2022
+CREATE DATABASE [BANKING]
+GO
+
+-- USE DATABASE
+USE [BANKING]
+GO
+
+-- CREATE TABLE: CENTRAL BANKS
+CREATE TABLE Centrals (
+    id_central INT PRIMARY KEY IDENTITY(1,1),
+    name NVARCHAR(100) NOT NULL,
+    address NVARCHAR(100) NOT NULL,
+    phone NVARCHAR(20) NOT NULL,
+    email NVARCHAR(100) NOT NULL,
+    created_date DATETIME NOT NULL DEFAULT GETDATE(),
+    updated_date DATETIME NOT NULL DEFAULT GETDATE()
+);
+
+-- CREATE TABLE: BRANCHES
+CREATE TABLE Branches (
+    id_branch INT PRIMARY KEY IDENTITY(1,1),
+    code NVARCHAR(10) UNIQUE NOT NULL,
+    name NVARCHAR(100) NOT NULL,
+    address NVARCHAR(100) NOT NULL,
+    phone NVARCHAR(20) NOT NULL,
+    email NVARCHAR(100) NOT NULL,
+    id_central INT NOT NULL,
+    created_date DATETIME NOT NULL DEFAULT GETDATE(),
+    updated_date DATETIME NOT NULL DEFAULT GETDATE(),
+    FOREIGN KEY (id_central) REFERENCES Centrals(id_central) ON DELETE CASCADE
+);
+
+-- CREATE TABLE: ATMS
+CREATE TABLE ATMs (
+    id_atm INT PRIMARY KEY IDENTITY(1,1),
+    code NVARCHAR(10) UNIQUE NOT NULL,
+    name NVARCHAR(100) NOT NULL,
+    address NVARCHAR(100) NOT NULL,
+    phone NVARCHAR(20) NOT NULL,
+    email NVARCHAR(100) NOT NULL,
+    id_branch INT NOT NULL,
+    created_date DATETIME NOT NULL DEFAULT GETDATE(),
+    updated_date DATETIME NOT NULL DEFAULT GETDATE(),
+    FOREIGN KEY (id_branch) REFERENCES Branches(id_branch) ON DELETE CASCADE
+);
+
+-- CREATE TABLE: ACCOUNT HOLDERS
+CREATE TABLE Account_Holders (
+    id_account_holder INT PRIMARY KEY IDENTITY(1,1),
+    name NVARCHAR(100) NOT NULL,
+    address NVARCHAR(100) NOT NULL,
+    phone NVARCHAR(20) NOT NULL,
+    email NVARCHAR(100) NOT NULL,
+    created_date DATETIME NOT NULL DEFAULT GETDATE(),
+    updated_date DATETIME NOT NULL DEFAULT GETDATE()
+);
+
+-- CREATE TABLE: ACCOUNTS
+CREATE TABLE Accounts (
+    id_account INT PRIMARY KEY IDENTITY(1,1),
+    number NVARCHAR(10) UNIQUE NOT NULL,
+    type NVARCHAR(10) CHECK (type IN ('SAVINGS', 'CHECKING')),
+    currency NVARCHAR(10) CHECK (currency IN ('USD', 'GTQ')),
+    balance DECIMAL(18,2) DEFAULT 0.00 NOT NULL,
+    id_account_holder INT NOT NULL,
+    id_branch INT NOT NULL,
+    created_date DATETIME NOT NULL DEFAULT GETDATE(),
+    updated_date DATETIME NOT NULL DEFAULT GETDATE(),
+    FOREIGN KEY (id_account_holder) REFERENCES Account_Holders(id_account_holder) ON DELETE CASCADE,
+    FOREIGN KEY (id_branch) REFERENCES Branches(id_branch) ON DELETE CASCADE
+);
+
+
+
+
+-- CREATE TABLE: TRANSACTIONS (ALTERNATIVE FIX)
+CREATE TABLE Transactions (
+    id_transaction INT PRIMARY KEY IDENTITY(1,1),
+    transaction_type NVARCHAR(10) CHECK (transaction_type IN ('DEPOSIT', 'WITHDRAWAL')),
+    transaction_amount DECIMAL(18,2) DEFAULT 0.00 NOT NULL,
+    id_account INT NOT NULL,
+    id_atm INT NOT NULL,
+    created_date DATETIME NOT NULL DEFAULT GETDATE(),
+    updated_date DATETIME NOT NULL DEFAULT GETDATE(),
+    
+    CONSTRAINT FK_Transactions_Accounts FOREIGN KEY (id_account) 
+        REFERENCES Accounts(id_account) ON DELETE CASCADE,
+    CONSTRAINT FK_Transactions_ATMs FOREIGN KEY (id_atm) 
+        REFERENCES ATMs(id_atm) ON DELETE NO ACTION
+);
+
+
+
