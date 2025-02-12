@@ -18,9 +18,9 @@ La estructura de la landing page se divide en diferentes secciones, cada una asi
 | Sección       | Descripción                                    | Responsable      | Rama Git |
 |--------------|--------------------------------------------|----------------|----------|
 | **Header**   | Logo y menú de navegación                 | David          | `sistemas1_6717` |
-| **Navbar**   | Menú de navegación vertical               | Ludwin & Engelber | `sistemas1_16913``sistemas1_15397` |
+| **Navbar**   | Menú de navegación vertical               | Ludwin & Engelber | `sistemas1_16913 y sistemas1_15397` |
 | **Content Main** | Contenido principal                     | Milton         | `sistemas1_10379` |
-| **Footer**   | Información, redes sociales, dirección, teléfonos, contacto | Oscar & Gerardo | `sistemas1_5573``sistemas1_4190`|
+| **Footer**   | Información, redes sociales, dirección, teléfonos, contacto | Oscar & Gerardo | `sistemas1_5573 y sistemas1_4190`|
 
 ---
 
@@ -36,7 +36,7 @@ La estructura de la landing page se divide en diferentes secciones, cada una asi
 ## Instalación y Uso
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/TecnoPro.git
+   git clone https://github.com/Miltongom/TecnoPro.git
    ```
 2. Navegar al directorio del proyecto:
    ```bash
@@ -62,7 +62,8 @@ La estructura de la landing page se divide en diferentes secciones, cada una asi
 ---
 
 ## Logo del Proyecto
-![Hot Computer Logo](https://drive.google.com/file/d/1ZZSooItoLiuHStsr99kr9NL_lFssVakc/view?usp=sharing)
+![Hot Computer Logo](https://drive.google.com/uc?id=1ZZSooItoLiuHStsr99kr9NL_lFssVakc)
+
 
 ---
 
