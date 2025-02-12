@@ -17,10 +17,10 @@ La estructura de la landing page se divide en diferentes secciones, cada una asi
 
 | Sección       | Descripción                                    | Responsable      | Rama Git |
 |--------------|--------------------------------------------|----------------|----------|
-| **Header**   | Logo y menú de navegación                 | David          | `header` |
-| **Navbar**   | Menú de navegación vertical               | Ludwin & Engelber | `navbar` |
-| **Content Main** | Contenido principal                     | Milton         | `content-main` |
-| **Footer**   | Información, redes sociales, dirección, teléfonos, contacto | Oscar & Gerardo | `footer` |
+| **Header**   | Logo y menú de navegación                 | David          | `sistemas1_6717` |
+| **Navbar**   | Menú de navegación vertical               | Ludwin & Engelber | `sistemas1_16913``sistemas1_15397` |
+| **Content Main** | Contenido principal                     | Milton         | `sistemas1_10379` |
+| **Footer**   | Información, redes sociales, dirección, teléfonos, contacto | Oscar & Gerardo | `sistemas1_5573``sistemas1_4190`|
 
 ---
 
@@ -28,7 +28,7 @@ La estructura de la landing page se divide en diferentes secciones, cada una asi
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Bootstrap** (Opcional)
+- **Bootstrap5**
 - **Framework MVC**
 
 ---
@@ -36,11 +36,11 @@ La estructura de la landing page se divide en diferentes secciones, cada una asi
 ## Instalación y Uso
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/hot-computer.git
+   git clone https://github.com/tuusuario/TecnoPro.git
    ```
 2. Navegar al directorio del proyecto:
    ```bash
-   cd hot-computer
+   cd TecnoPro
    ```
 3. Instalar dependencias (si aplica):
    ```bash
@@ -62,7 +62,7 @@ La estructura de la landing page se divide en diferentes secciones, cada una asi
 ---
 
 ## Logo del Proyecto
-![Hot Computer Logo](WhatsApp%20Image%202025-02-10%20at%2022.50.57_ff59f065.jpg)
+![Hot Computer Logo](https://drive.google.com/file/d/1ZZSooItoLiuHStsr99kr9NL_lFssVakc/view?usp=sharing)
 
 ---
 
