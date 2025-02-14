@@ -5,37 +5,53 @@ $type = isset($_GET['page']) ? $_GET['page'] : 'home';
 $description = $model->getComputers($type);
 ?>
 
-<main class="content">
-    <h2><?php echo ucfirst($type); ?></h2>
-    <p><?php echo $description; ?></p>
-
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="assets/images/laptop.jpg" alt="Laptops">
-            <h3>Laptops</h3>
-            <p>Encuentra una gran variedad de laptops para trabajo, estudio y gaming.</p>
-            <a href="index.php?page=laptops" class="btn">Ver más</a>
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Catálogo de Laptops</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../assets/images/laptop1.jpg" class="card-img-top fixed-image" alt="Laptop 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Dell Inspiron 15-7579</h5>
+                    <p class="card-text">Core i5, 7ma Gen, 12GB RAM, 256GB SSD, Pantalla 15.6" Táctil</p>
+                    <p class="price text-danger">Q3,495.00</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
 
-        <div class="product-card">
-            <img src="assets/images/desktop.jpg" alt="Escritorio">
-            <h3>Computadoras de Escritorio</h3>
-            <p>Las mejores computadoras de escritorio para tu hogar u oficina.</p>
-            <a href="index.php?page=escritorio" class="btn">Ver más</a>
+        <!-- Producto 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../assets/images/laptop2.jpg" class="card-img-top fixed-image" alt="Laptop 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Dell Latitude 5400</h5>
+                    <p class="card-text">Core i5, 8va Gen, 16GB RAM, 256GB SSD, Pantalla 14" FHD</p>
+                    <p class="price text-danger">Q2,995.00</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
 
-        <div class="product-card">
-            <img src="assets/images/mac.jpg" alt="Mac">
-            <h3>Mac</h3>
-            <p>Descubre nuestra selección de computadoras Apple MAC.</p>
-            <a href="index.php?page=mac" class="btn">Ver más</a>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/images/windows.jpg" alt="Windows">
-            <h3>Windows</h3>
-            <p>Compra computadoras con sistema operativo Windows al mejor precio.</p>
-            <a href="index.php?page=windows" class="btn">Ver más</a>
+        <!-- Producto 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../assets/images/laptop3.jpg" class="card-img-top fixed-image" alt="Laptop 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Dell Latitude 5400 (Touch)</h5>
+                    <p class="card-text">Core i5, 8va Gen, 16GB RAM, 256GB SSD, Pantalla 14" Touch</p>
+                    <p class="price text-danger">Q3,178.00</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
     </div>
-</main>
+</div>
+
+<style>
+    .fixed-image {
+        height: 300px;
+        object-fit: cover;
+    }
+</style>
