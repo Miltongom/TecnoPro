@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 # TecnoPro
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Engelber Cifuentes
 analisis_sistemas
 AUTHOR
@@ -136,6 +137,12 @@ CREATE INDEX IX_TRANSACTIONS_ATM ON TRANSACTIONS(id_atm_transaction);
 CREATE INDEX IX_TRANSACTIONS_Date ON TRANSACTIONS(created_date);
 =======
 HRERE
+=======
+#DavidMonterroso
+=======
+HRERE
+>>>>>>> c4eed78b115b53cd0e2631d77a72f4f6ecab082c
+>>>>>>> sistemas1_6717
 analisis_sistemas
 =======
 # Hot Computer - Landing Page
