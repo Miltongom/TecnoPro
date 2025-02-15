@@ -5,15 +5,15 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner text-center">
         <div class="carousel-item active">
-            <img src="../assets/images/mac.jpg" class="d-block w-50" alt="Slide 1">
+            <img src="../assets/images/carousel1.jpg" class="d-block mx-auto img-fluid carousel-img" alt="Slide 1">
         </div>
         <div class="carousel-item">
-            <img src="../assets/images/windows.jpg" class="d-block w-50" alt="Slide 2">
+            <img src="../assets/images/carousel2.jpg" class="d-block mx-auto img-fluid carousel-img" alt="Slide 2">
         </div>
         <div class="carousel-item">
-            <img src="../assets/images/desktop.jpg" class="d-block w-50" alt="Slide 3">
+            <img src="../assets/images/carousel1.jpg" class="d-block mx-auto img-fluid carousel-img" alt="Slide 3">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -23,3 +23,13 @@
         <span class="carousel-control-next-icon"></span>
     </button>
 </div>
+
+<!-- Estilos personalizados -->
+<style>
+    .carousel-img {
+        max-width: 800px; /* Ajusta este valor para hacerlas más pequeñas */
+        max-height: 200px; /* Ajusta la altura */
+        object-fit: cover;
+    }
+</style>
+
