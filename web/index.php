@@ -199,6 +199,8 @@
     <div class="social-icons mt-3">
         <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
         <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.snapchat.com" target="_blank"><i class="bi bi-snapchat"></i></a>
     </div>
 </footer>
 
