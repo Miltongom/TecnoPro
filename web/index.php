@@ -72,7 +72,7 @@
     <!-- Navbar lateral -->
     <nav class="sidebar">
         <div class="text-center">
-            <img src="../assets/images/logo1.jpg" alt="Hot Computer" width="100">
+            <img src="../assets/images/logotipo.jpeg" alt="Hot Computer" width="100">
             <h4>Hot Computer</h4>
         </div>
         <a href="index.php?page=home">Inicio</a>
@@ -97,13 +97,22 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/carousel1.jpg" class="d-block w-100" alt="Slide 1">
+                                <img src="../assets/images/carousel1.png" class="d-block w-100" alt="Slide 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/carousel2.jpg" class="d-block w-100" alt="Slide 2">
+                                <img src="../assets/images/carousel2.png" class="d-block w-100" alt="Slide 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/carousel3.jpg" class="d-block w-100" alt="Slide 3">
+                                <img src="../assets/images/carousel3.png" class="d-block w-100" alt="Slide 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/images/carousel4.png" class="d-block w-100" alt="Slide 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/images/carousel5.png" class="d-block w-100" alt="Slide 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/images/carousel6.png" class="d-block w-100" alt="Slide 6">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
