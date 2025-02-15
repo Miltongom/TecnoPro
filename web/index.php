@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Computer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
-        /* Ajustes generales */
+        /* General adjustments */
         body {
             font-family: Arial, sans-serif;
         }
 
-        /* Navbar lateral */
+        /* Sidebar navigation */
         .sidebar {
             height: 100vh;
             background-color: #212529;
@@ -40,13 +40,13 @@
             background-color: #343a40;
         }
 
-        /* Contenido principal */
+        /* Main content */
         .content {
-            margin-left: 250px; /* Ajuste para el navbar */
+            margin-left: 250px; /* Adjust for sidebar */
             padding: 20px;
         }
 
-        /* Carrusel */
+        /* Carousel */
         .carousel-container {
             max-width: 100%;
             margin: auto;
@@ -69,26 +69,26 @@
 </head>
 <body>
 
-    <!-- Navbar lateral -->
+    <!-- Sidebar navigation -->
     <nav class="sidebar">
         <div class="text-center">
             <img src="../assets/images/logotipo.jpeg" alt="Hot Computer" width="100">
             <h4>Hot Computer</h4>
         </div>
-        <a href="index.php?page=home">Inicio</a>
+        <a href="index.php?page=home">Home</a>
         <a href="index.php?page=laptops">Laptops</a>
-        <a href="index.php?page=desktop">Escritorio</a>
+        <a href="index.php?page=desktop">Desktop</a>
     </nav>
 
-    <!-- Contenido principal -->
+    <!-- Main content -->
     <div class="content">
-        <!-- Header con Carrusel -->
+        <!-- Header with Carousel -->
         <header class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
                 </div>
                 <div class="col-12">
-                    <!-- Carrusel -->
+                    <!-- Carousel -->
                     <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
@@ -126,7 +126,7 @@
             </div>
         </header>
 
-        <!-- Main (contenido dinámico) -->
+        <!-- Main (dynamic content) -->
         <main class="container mt-4">
             <?php
             $page = isset($_GET['page']) ? $_GET['page'] : 'home';
@@ -136,20 +136,85 @@
                 include $pageFile;
             } else {
                 echo "<div class='container mt-5 text-center'>
-                        <h2 class='text-danger'>Página no encontrada</h2>
-                        <p>Lo sentimos, la página que buscas no existe.</p>
-                        <a href='index.php?page=home' class='btn btn-primary'>Volver al Inicio</a>
+                        <h2 class='text-danger'>Page not found</h2>
+                        <p>Sorry, the page you are looking for does not exist.</p>
+                        <a href='index.php?page=home' class='btn btn-primary'>Return to Home</a>
                       </div>";
             }
             ?>
         </main>
 
-        <!-- Footer -->
-        <footer class="mt-5">
-            <p>&copy; 2024 Hot Computer - Todos los derechos reservados.</p>
-        </footer>
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        /* Asegurar que el cuerpo ocupe toda la pantalla */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Permitir que el contenido crezca y empuje el footer hacia abajo */
+        .content {
+            flex: 1;
+        }
+
+        /* Mantener el footer al final sin que se superponga al contenido */
+        footer {
+            width: 100%;
+            position: relative;
+        }
+
+        /* Estilo para los íconos de redes sociales */
+        .social-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f8b400; /* Cambia de color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2025 Hot Computer. All rights reserved.</p>
+    
+    <div>
+        <a href="#" class="text-white me-3">Privacy Policy</a>
+        <a href="#" class="text-white">Terms and Conditions</a>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <!-- Social Media Icons -->
+    <div class="social-icons mt-3">
+        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .fixed-image {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+</style>

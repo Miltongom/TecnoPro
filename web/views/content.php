@@ -8,17 +8,17 @@ $description = $model->getComputers($type);
 ?>
 
 <div class="container mt-5">
-    <h2 class="mb-4 text-center">Catálogo de Laptops</h2>
+    <h2 class="mb-4 text-center">Laptop Catalog</h2>
     <div class="row">
         <?php
-        // Array de productos para hacerlo dinámico
+        // Product array to make it dynamic
         $laptops = [
-            ["Dell Inspiron 15-7579", "Core i5, 7ma Gen, 12GB RAM, 256GB SSD, 15.6\" Táctil", "Q3,495.00", "laptop1.jpg"],
-            ["Dell Latitude 5400", "Core i5, 8va Gen, 16GB RAM, 256GB SSD, 14\" FHD", "Q2,995.00", "laptop2.jpg"],
-            ["Dell Latitude 5400 (Touch)", "Core i5, 8va Gen, 16GB RAM, 256GB SSD, 14\" Touch", "Q3,178.00", "laptop3.jpg"],
-            ["HP EliteBook 840 G5", "Core i7, 8va Gen, 16GB RAM, 512GB SSD, 14\" FHD", "Q4,500.00", "laptop4.jpg"],
-            ["Lenovo ThinkPad T490", "Core i7, 8va Gen, 16GB RAM, 512GB SSD, 14\" FHD", "Q4,250.00", "laptop5.jpg"],
-            ["MacBook Air M1", "Chip M1, 8GB RAM, 256GB SSD, 13.3\" Retina", "Q7,500.00", "laptop6.jpg"]
+            ["Dell Inspiron 15-7579", "Core i5, 7th Gen, 12GB RAM, 256GB SSD, 15.6" Touch", "$449.00", "laptop1.jpg"],
+            ["Dell Latitude 5400", "Core i5, 8th Gen, 16GB RAM, 256GB SSD, 14" FHD", "$389.00", "laptop2.jpg"],
+            ["Dell Latitude 5400 (Touch)", "Core i5, 8th Gen, 16GB RAM, 256GB SSD, 14" Touch", "$419.00", "laptop3.jpg"],
+            ["HP EliteBook 840 G5", "Core i7, 8th Gen, 16GB RAM, 512GB SSD, 14" FHD", "$599.00", "laptop4.jpg"],
+            ["Lenovo ThinkPad T490", "Core i7, 8th Gen, 16GB RAM, 512GB SSD, 14" FHD", "$565.00", "laptop5.jpg"],
+            ["MacBook Air M1", "M1 Chip, 8GB RAM, 256GB SSD, 13.3" Retina", "$999.00", "laptop6.jpg"]
         ];
 
         foreach ($laptops as $laptop) {
@@ -30,7 +30,7 @@ $description = $model->getComputers($type);
                             <h5 class='card-title'>{$laptop[0]}</h5>
                             <p class='card-text'>{$laptop[1]}</p>
                             <p class='price text-danger fw-bold'>{$laptop[2]}</p>
-                            <a href='#' class='btn btn-primary'>Ver más</a>
+                            <a href='#' class='btn btn-primary'>View More</a>
                         </div>
                     </div>
                 </div>";
@@ -39,7 +39,7 @@ $description = $model->getComputers($type);
     </div>
 </div>
 
-<!-- Estilos personalizados -->
+<!-- Custom Styles -->
 <style>
     .fixed-image {
         height: 250px;

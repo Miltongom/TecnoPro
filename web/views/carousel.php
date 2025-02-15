@@ -27,8 +27,8 @@
 <!-- Estilos personalizados -->
 <style>
     .carousel-img {
-        max-width: 800px; /* Ajusta este valor para hacerlas más pequeñas */
-        max-height: 200px; /* Ajusta la altura */
+        max-width: 800px; 
+        max-height: 200px; 
         object-fit: cover;
     }
 </style>
